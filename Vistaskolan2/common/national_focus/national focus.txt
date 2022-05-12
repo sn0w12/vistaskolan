@@ -1,0 +1,1979 @@
+focus_tree = {
+	id = Vistaskolan
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = VIS
+		}
+	}
+	default = no
+	focus = {
+		id = VIS_Abandon_Ola
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		x = 10
+		y = 0
+		completion_reward = {
+	  		add_political_power = 100
+	  }
+	}
+	focus = {
+		id = VIS_Tomas
+		icon = GFX_goal_support_fascism
+		cost = 10
+		prerequisite = {
+			focus = VIS_Abandon_Ola
+		}
+		mutually_exclusive = {
+			focus = VIS_Karin
+			focus = VIS_Inno
+			focus = VIS_Maria
+		}
+		x = 3
+		y = 1
+		completion_reward = {
+	  		add_ideas = VIS_tomas_idiologi
+	  		set_politics = { ruling_party = fascism elections_allowed = no }
+
+	  		create_field_marshal = {
+	name = "Tomas Reimoser"
+	picture = "Tomas.dds"
+	traits = { old_guard war_hero politically_conected reckless }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+	id = 1
+				}
+
+	  		}
+
+	}
+	focus = {
+		id = VIS_Promote_Bjorn
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 5
+		prerequisite = {
+			focus = VIS_Tomas
+		}
+		x = 1
+		y = 2
+		completion_reward = {
+			create_corps_commander = {
+					name = "Björn Paulsson"
+					picture = "Björn.dds"
+					skill = 4
+					attack_skill = 4
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 3
+					id = 5
+					traits = { infantry_officer }
+					}
+			}
+	}
+	focus = {
+		id = VIS_Recruit_The_Orten_Kids
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 5
+		prerequisite = {
+			focus = VIS_Tomas
+		}
+		x = 3
+		y = 2
+		completion_reward = {
+	  		remove_ideas = VIS_orten_ungar
+	  		add_ideas = VIS_recruit_orten
+	  		}
+
+	}
+	focus = {
+		id = VIS_Join_Axis
+		icon = GFX_goal_generic_improve_relations
+		cost = 10
+		prerequisite = {
+			focus = VIS_Promote_Bjorn
+			focus = VIS_Recruit_The_Orten_Kids
+		}
+		mutually_exclusive = {
+			focus = VIS_Make_Our_Own_Faction
+		}
+		x = 1
+		y = 3
+
+	}
+	focus = {
+		id = VIS_Make_Our_Own_Faction
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		prerequisite = {
+			focus = VIS_Recruit_The_Orten_Kids
+			focus = VIS_Promote_Bjorn
+		}
+		mutually_exclusive = {
+			focus = VIS_Join_Axis
+		}
+		x = 3
+		y = 3
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			}
+	}
+	focus = {
+		id = VIS_War_Plans
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		prerequisite = {
+			focus = VIS_Join_Axis
+			focus = VIS_Make_Our_Own_Faction
+		}
+		x = 1
+		y = 4
+		completion_reward = {
+			add_ideas = VIS_war_plans
+			}	
+	}
+	focus = {
+		id = VIS_Recruit_Kids
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10
+		
+		prerequisite = {
+			focus = VIS_Make_Our_Own_Faction
+			focus = VIS_Join_Axis
+		}
+		x = 3
+		y = 4
+
+		completion_reward = {
+	  		add_ideas = VIS_recruit_kids
+	  		}
+	}
+	focus = {
+		id = VIS_Sweden_Qustion
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		prerequisite = {
+			focus = VIS_War_Plans
+			focus = VIS_Recruit_Kids
+		}
+		x = 1
+		y = 5
+		completion_reward = {
+	  		country_event = { id = vistaskolan.2 }
+	  		}
+	}
+	focus = {
+		id = VIS_War_Music
+		icon = GFX_goal_generic_propaganda
+		cost = 7
+		prerequisite = {
+			focus = VIS_Sweden_Qustion
+		}
+		x = 1
+		y = 6
+		completion_reward = {
+	  		add_ideas = VIS_war_music
+	  		}
+
+	}
+	focus = {
+		id = VIS_A_Gun_In_Every_Hand
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = VIS_Recruit_Kids
+		}
+		x = 3
+		y = 6
+		completion_reward = {
+			add_ideas = VIS_gun_hand
+			}	
+	}
+	focus = {
+		id = VIS_Karin
+		icon = GFX_goal_support_democracy
+		cost = 10
+		prerequisite = {
+			focus = VIS_Abandon_Ola
+		}
+		mutually_exclusive = {
+			focus = VIS_Tomas
+			focus = VIS_Inno
+			focus = VIS_Maria
+		}
+		x = 8
+		y = 1
+		completion_reward = {
+	  		add_ideas = VIS_karin_idiologi
+	  		set_politics = { ruling_party = democratic elections_allowed = no }
+create_country_leader = {
+    name = "Karin Törnqvist"
+    desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
+    picture = "Karin.dds"
+    expire = "1965.1.1"
+    ideology = liberalism
+    id = 2
+    traits = {
+        #
+    }
+}
+	  		}
+
+	}
+	focus = {
+		id = VIS_Promise_Of_Peace
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10
+		prerequisite = {
+			focus = VIS_Karin
+		}
+		x = 8
+		y = 2
+		completion_reward = {
+	  		add_ideas = VIS_promise_peace
+	  		}
+
+	}
+	focus = {
+		id = VIS_More_Teachers
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 5
+		prerequisite = {
+			focus = VIS_Promise_Of_Peace
+		}
+		x = 6
+		y = 3
+		completion_reward = {
+	  		add_ideas = VIS_more_teachers
+	  		}
+
+	}
+	focus = {
+		id = VIS_Promote_Therese
+		icon = "GFX_goal_generic_major_alliance"
+		cost = 5
+		prerequisite = {
+			focus = VIS_Promise_Of_Peace
+		}
+		x = 8
+		y = 3
+		completion_reward = {
+			create_corps_commander = {
+					name = "Therese Carlsson"
+					picture = "Therese.dds"
+					skill = 4
+					attack_skill = 2
+					defense_skill = 2
+					planning_skill = 3
+					logistics_skill = 4
+					id = 5
+					traits = { infantry_officer }
+					}
+			}
+	}
+	focus = {
+		id = VIS_Maria
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10
+		prerequisite = {
+			focus = VIS_Abandon_Ola
+		}
+		mutually_exclusive = {
+			focus = VIS_Karin
+			focus = VIS_Inno
+			focus = VIS_Tomas
+		}
+		x = 12
+		y = 1
+		completion_reward = {
+	  		add_ideas = VIS_maria_idiologi
+	  		set_politics = { ruling_party = neutrality elections_allowed = no }
+	  		}
+
+	}
+	focus = {
+		id = VIS_Spanish_Dreams
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		prerequisite = {
+			focus = VIS_Maria
+		}
+		x = 12
+		y = 2
+		completion_reward = {
+	  		country_event = { id = vistaskolan.3 }
+	  		}
+	}
+	focus = {
+		id = VIS_Mexico_Dreams
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 10
+		prerequisite = {
+			focus = VIS_Spanish_Dreams
+		}
+		x = 12
+		y = 3
+		completion_reward = {
+	  		country_event = { id = vistaskolan.4 }
+	  		add_ideas = VIS_empire_dream
+	  		}
+	}
+	focus = {
+		id = VIS_Promote_Cesar
+		icon = GFX_goal_generic_major_alliance
+		cost = 5
+		prerequisite = {
+			focus = VIS_Mexico_Dreams
+		}
+		x = 11
+		y = 4
+		completion_reward = {
+	  		create_corps_commander = {
+	name = "Cesar"
+	picture = "Cesar.dds"
+	traits = { war_hero media_personality harsh_leader }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 4
+	id = 2
+	  		}
+		}
+	}
+	focus = {
+		id = VIS_Kill_Adam
+		icon = GFX_goal_generic_secret_weapon
+		cost = 7
+		prerequisite = {
+			focus = VIS_Promote_Cesar
+		}
+		mutually_exclusive = {
+			focus = VIS_Promote_Adam
+		}
+		x = 10
+		y = 5
+		completion_reward = {
+	  		add_ideas = VIS_kill_adam
+	  		add_political_power = 150
+	  		}
+	}
+	focus = {
+		id = VIS_A_Royal_Navy
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10
+		prerequisite = {
+			focus = VIS_Spanish_Dreams
+		}
+		x = 14
+		y = 3
+		completion_reward = {
+			add_ideas = VIS_royal_navy
+			}
+	}
+	focus = {
+		id = VIS_Submarin_Focus
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10
+		prerequisite = {
+			focus = VIS_A_Royal_Navy
+		}
+		mutually_exclusive = {
+			focus = VIS_Derstroyer_Focus
+		}
+		x = 13
+		y = 4
+
+		completion_reward = {
+			navy_experience = 25
+				set_technology = { cruiser_submarines = 1 }
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				technology = unrestricted_submarine_warfare
+				technology = advanced_submarine_warfare
+			}
+		}
+	}
+	focus = {
+		id = VIS_Promote_Adam
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5
+		prerequisite = {
+			focus = VIS_Promote_Cesar
+		}
+		mutually_exclusive = {
+			focus = VIS_Kill_Adam
+		}
+		x = 13
+		y = 5
+		completion_reward = {
+	  		create_corps_commander = {
+	name = "Adam Alami"
+	picture = "Adam.dds"
+	traits = { war_hero media_personality harsh_leader }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+	id = 6
+	  		}
+		}
+	}
+	focus = {
+		id = VIS_Inno
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10
+		prerequisite = {
+			focus = VIS_Abandon_Ola
+		}
+		mutually_exclusive = {
+			focus = VIS_Karin
+			focus = VIS_Maria
+			focus = VIS_Karin
+			focus = VIS_Tomas
+		}
+		x = 16
+		y = 1
+		completion_reward = {
+	  		add_ideas = VIS_inno_idiologi
+	  		set_politics = { ruling_party = communism elections_allowed = no }
+	  		}
+
+	}
+	focus = {
+		id = VIS_Shared_Food
+		icon = GFX_goal_generic_national_unity
+		cost = 7
+		prerequisite = {
+			focus = VIS_Inno
+		}
+		x = 15
+		y = 2
+		completion_reward = {
+	  		add_ideas = VIS_shared_food
+	  		}
+
+	}
+	focus = {
+		id = VIS_Derstroyer_Focus
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10
+		prerequisite = {
+			focus = VIS_A_Royal_Navy
+		}
+		mutually_exclusive = {
+			focus = VIS_Submarin_Focus
+		}
+		x = 15
+		y = 4
+		completion_reward = {
+	  		add_ideas = VIS_spanish_fleet
+	  		}
+	}
+	focus = {
+		id = VIS_Threaten_The_Orten_Kids
+		icon = GFX_goal_generic_political_pressure
+		cost = 7
+		prerequisite = {
+			focus = VIS_Promote_Cesar
+		}
+		x = 15
+		y = 5
+		completion_reward = {
+	  		remove_ideas = VIS_orten_ungar
+	  		add_ideas = VIS_threaten_orten
+	  		}
+
+	}
+	focus = {
+		id = VIS_Expand_Secret_Inno_facilities
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = VIS_Inno
+		}
+		x = 17
+		y = 2
+		completion_reward = {
+	  		add_ideas = VIS_inno_factories
+	  		}
+	}
+	focus = {
+		id = VIS_Promote_Adam2
+		icon = GFX_goal_generic_cavalry
+		cost = 5
+		prerequisite = {
+			focus = VIS_Inno
+		}
+		x = 19
+		y = 2
+		completion_reward = {
+	  		create_corps_commander = {
+	name = "Adam Alami"
+	picture = "Adam.dds"
+	traits = { war_hero media_personality harsh_leader }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+	id = 6
+	  		}
+		}
+	}
+	focus = {
+		id = VIS_Find_Jobs_For_Orten_Kids
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = VIS_Promote_Adam2
+		}
+		mutually_exclusive = {
+			focus = VIS_Public_Execution_Of_The_Orten_Kids
+		}
+		x = 18
+		y = 3
+		completion_reward = {
+	  		remove_ideas = VIS_orten_ungar
+	  		add_ideas = VIS_orten_jobs
+	  		}
+
+	}
+	focus = {
+		id = VIS_Public_Execution_Of_The_Orten_Kids
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10
+		prerequisite = {
+			focus = VIS_Promote_Adam2
+		}
+		mutually_exclusive = {
+			focus = VIS_Find_Jobs_For_Orten_Kids
+		}
+		x = 20
+		y = 3
+		completion_reward = {
+	  		remove_ideas = VIS_orten_ungar
+	  		add_ideas = VIS_execute_orten
+	  		}
+
+	}
+	focus = {
+		id = VIS_Organize_Dancing_Competiotion
+		icon = GFX_goal_support_democracy
+		cost = 10
+		prerequisite = {
+			focus = VIS_Find_Jobs_For_Orten_Kids
+			focus = VIS_Public_Execution_Of_The_Orten_Kids
+		}
+		x = 19
+		y = 4
+		completion_reward = {
+			add_ideas = VIS_public_dance
+	  		remove_ideas = VIS_execute_orten
+	  		}
+
+	}
+	focus = {
+		id = VIS_African_Dream
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10
+		prerequisite = {
+			focus = VIS_Organize_Dancing_Competiotion
+		}
+		x = 18
+		y = 5
+		completion_reward = {
+			add_ideas = VIS_african_dream
+			}
+	}
+	focus = {
+		id = VIS_White_Inno_Clones
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10
+		prerequisite = {
+			focus = VIS_Organize_Dancing_Competiotion
+		}
+		x = 20
+		y = 5
+		completion_reward = {
+			add_ideas = VIS_white_inno
+	  		}
+	}
+	focus = {
+		id = VIS_Demand_Nigeria
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = VIS_African_Dream
+			focus = VIS_White_Inno_Clones
+		}
+		x = 19
+		y = 6
+		completion_reward = {
+			558 = { add_claim_by = VIS }
+			}
+	}
+	focus = {
+		id = VIS_Better_Students
+		icon = GFX_focus_research
+		cost = 7
+		prerequisite = {
+			focus = VIS_More_Teachers
+		}
+		x = 6
+		y = 4
+		completion_reward = {
+	  		remove_ideas = VIS_orten_ungar
+	  		add_ideas = VIS_orten_ungar2
+	  		}
+
+
+	}
+	focus = {
+		id = VIS_Promote_Johnny
+		icon = GFX_goal_demand_sudetenland
+		cost = 5
+		prerequisite = {
+			focus = VIS_A_Gun_In_Every_Hand
+			focus = VIS_War_Music
+			focus = VIS_Join_Alies
+			focus = VIS_Kill_Adam
+			focus = VIS_Promote_Adam
+			focus = VIS_Demand_Nigeria
+		}
+		mutually_exclusive = {
+			focus = VIS_Promote_Ola
+		}
+		x = 8
+		y = 6
+		completion_reward = {
+	  		create_corps_commander = {
+	name = "Johnny Gustafsson Lyrberg"
+	picture = "Johnny.dds"
+    traits = { Logistics_Wizard    Commando }
+    skill = 4
+
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 10
+	  		}
+		}
+	}
+	focus = {
+		id = VIS_Promote_Olov
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5
+		prerequisite = {
+			focus = VIS_A_Gun_In_Every_Hand
+			focus = VIS_Join_Alies
+			focus = VIS_Kill_Adam
+			focus = VIS_Promote_Adam
+			focus = VIS_Demand_Nigeria
+		}
+		mutually_exclusive = {
+			focus = VIS_Promote_Inger
+		}
+		x = 11
+		y = 6
+		completion_reward = {
+	  		create_corps_commander = {
+	name = "Olov Fange"
+	picture = "Olov.dds"
+	traits = { media_personality }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+	id = 8
+	  		}
+		}
+	}
+	focus = {
+		id = VIS_Promote_Ola
+		icon = GFX_goal_anti_comintern_pact
+		cost = 5
+		prerequisite = {
+			focus = VIS_War_Music
+			focus = VIS_A_Gun_In_Every_Hand
+			focus = VIS_Join_Alies
+			focus = VIS_Kill_Adam
+			focus = VIS_Promote_Adam
+			focus = VIS_Demand_Nigeria
+		}
+		mutually_exclusive = {
+			focus = VIS_Promote_Johnny
+		}
+		x = 6
+		y = 6
+		completion_reward = {
+	  		create_corps_commander = {
+	name = "Ola Bengtsson"
+	picture = "Ola.dds"
+    traits = { Skilled_Staffer Organizer Infantry_Officer Thorough_Planner }
+    skill = 4
+
+    attack_skill = 4
+    defense_skill = 1
+    planning_skill = 4
+    logistics_skill = 4
+	  		}
+		}
+	}
+	focus = {
+		id = VIS_Promote_Anders
+		icon = GFX_goal_generic_trade
+		cost = 5
+		prerequisite = {
+			focus = VIS_Promote_Johnny
+			focus = VIS_Promote_Ola
+			focus = VIS_Promote_Olov
+			focus = VIS_Promote_Inger
+		}
+		mutually_exclusive = {
+			focus = VIS_Promote_Gert
+		}
+		x = 8
+		y = 7
+		completion_reward = {
+	  		create_corps_commander = {
+	name = "Anders Eklund"
+	picture = "Anders.dds"
+	traits = { war_hero media_personality harsh_leader }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+	id = 10
+	  		}
+		}
+	}
+	focus = {
+		id = VIS_Promote_Inger
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		prerequisite = {
+			focus = VIS_Promote_Adam
+			focus = VIS_Demand_Nigeria
+			focus = VIS_Kill_Adam
+			focus = VIS_Join_Alies
+			focus = VIS_A_Gun_In_Every_Hand
+			focus = VIS_War_Music
+		}
+		mutually_exclusive = {
+			focus = VIS_Promote_Olov
+		}
+		x = 13
+		y = 6
+		completion_reward = {
+	  		create_corps_commander = {
+	 name = "Inger Lockner"
+    picture = "Inger.dds"
+    traits = { Armor_Officer Panzer_Leader Panzer_Expert Media_Personality}
+    skill = 4
+
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 5
+    logistics_skill = 1
+	  		}
+		}
+	}
+	focus = {
+		id = VIS_Promote_Gert
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 5
+		prerequisite = {
+			focus = VIS_Promote_Olov
+			focus = VIS_Promote_Inger
+			focus = VIS_Promote_Johnny
+			focus = VIS_Promote_Ola
+		}
+		mutually_exclusive = {
+			focus = VIS_Promote_Anders
+		}
+		x = 11
+		y = 7
+		completion_reward = {
+	  		create_corps_commander = {
+	name = "Gert Engzell"
+	 picture = "Gert.dds"
+    traits = { Infantry_Expert Expert_Delegator Infantry_Leader Adaptable }
+    skill = 4
+
+    attack_skill = 5
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 3
+	  		}
+		}
+	}
+	focus = {
+		id = VIS_Join_Alies
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		prerequisite = {
+			focus = VIS_Better_Students
+		}
+		x = 6
+		y = 5
+
+	}
+############
+
+    focus = {
+        id = VIS_More_Generals
+        icon = GFX_goal_generic_occupy_states_ongoing_war
+        cost = 8
+        x = 27
+        y = 0
+
+    }
+    focus = {
+        id = VIS_Navy_Focus
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        cost = 10
+        x = 15
+        y = 8
+        completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			army_experience = 50
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 0.5
+				uses = 1
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 0.5
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+
+   
+    focus = {
+        id = VIS_Air_Effort
+        icon = GFX_goal_generic_air_fighter2
+        cost = 10
+        x = 18
+        y = 8
+        completion_reward = {
+			air_experience = 75
+		}
+    }
+    focus = {
+        id = VIS_Focus_On_The_Army
+        icon = GFX_goal_generic_axis_build_infantry
+        cost = 10
+        x = 26
+        y = 8
+        completion_reward = {
+        army_experience = 50
+        }
+    }
+    focus = {
+        id = VIS_Industry_Effort
+        icon = GFX_goal_generic_construct_civ_factory
+        cost = 10
+        x = 30
+        y = 8
+        completion_reward = {
+        	add_ideas = VIS_industry_effort
+        }
+    }
+    focus = {
+        id = VIS_Engineering_Focus
+        icon = GFX_goal_generic_production2
+        cost = 10
+        x = 34
+        y = 8
+        completion_reward = {
+        add_ideas = VIS_engineering
+        }
+    }
+    focus = {
+        id = VIS_Keep_Elevensval
+        icon = GFX_goal_generic_fortify_city
+        cost = 10
+        mutually_exclusive = {
+            focus = VIS_No_More_Elevensval
+        }
+        x = 44
+        y = 0
+        completion_reward = {
+        add_ideas = VIS_keep_elevensval
+        }
+    }
+    focus = {
+        id = VIS_No_More_Elevensval
+        icon = GFX_goal_generic_improve_relations
+        cost = 10
+        mutually_exclusive = {
+            focus = VIS_Keep_Elevensval
+        }
+        x = 38
+        y = 0
+        completion_reward = {
+        add_ideas = VIS_no_elevensval
+        }
+    }
+    focus = {
+        id = VIS_Navy_Focus_2
+        icon = GFX_goal_generic_amphibious_assault
+        cost = 8
+        prerequisite = {
+            focus = VIS_Navy_Focus
+        }
+        x = 15
+        y = 9
+        completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_naval_effort_2dockyards
+			}
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				uses = 1
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+
+    }
+    focus = {
+        id = VIS_Promote_Janne
+        icon = GFX_goal_generic_military_deal
+        cost = 10
+        prerequisite = {
+            focus = VIS_More_Generals
+        }
+        x = 27
+        y = 1
+        completion_reward = {
+        create_corps_commander = {
+                    name = "Janne Piipponen"
+                    picture = "Janne.dds"
+                    skill = 4
+                    attack_skill = 2
+                    defense_skill = 2
+                    planning_skill = 5
+                    logistics_skill = 4
+                    id = 5
+                    traits = { infantry_officer Desert_Fox Ranger Jungle_Rat Hill_Fighter Mountaineer Swamp_Fox Winter_Expert}
+                    }
+        }
+    }
+    focus = {
+        id = VIS_Quality
+        icon = GFX_goal_generic_demand_territory
+        cost = 8
+        prerequisite = {
+            focus = VIS_Promote_Janne
+        }
+        mutually_exclusive = {
+            focus = VIS_Quantity
+        }
+        x = 25
+        y = 2
+
+    }
+    focus = {
+        id = VIS_Promote_Jakob
+        icon = GFX_goal_demand_sudetenland
+        cost = 10
+        prerequisite = {
+            focus = VIS_Quality
+        }
+        x = 25
+        y = 3
+        completion_reward = {
+        create_corps_commander = {
+                    name = "Jakob Jennische"
+                    picture = "Jakob.dds"
+                    skill = 4
+                    attack_skill = 1
+                    defense_skill = 2
+                    planning_skill = 5
+                    logistics_skill = 3
+                    id = 5
+                    traits = { Harsh_Leader Media_Personality Organizer }
+                    }
+        }
+    }
+    focus = {
+        id = VIS_Find_Kenta
+        icon = GFX_goal_generic_special_forces
+        cost = 10
+        prerequisite = {
+            focus = VIS_Promote_Jakob
+        }
+        x = 23
+        y = 4
+        completion_reward = {
+        create_corps_commander = {
+                    name = "Kenta Lilja"
+                    picture = "Kenta.dds"
+                    skill = 4
+                    attack_skill = 7
+                    defense_skill = 1
+                    planning_skill = 2
+                    logistics_skill = 2
+                    id = 5
+                    traits = { infantry_officer Ranger Bearer_of_Artillery Brilliant_Strategist }
+                    }
+        }
+    }
+    focus = {
+        id = VIS_Get_Sebastian
+        icon = GFX_goal_generic_major_alliance
+        cost = 10
+        prerequisite = {
+            focus = VIS_Promote_Jakob
+        }
+        x = 25
+        y = 4
+        completion_reward = {
+        create_corps_commander = {
+                    name = "Sebastian Nyberg"
+                    picture = "Sebastian.dds"
+                    skill = 4
+                    attack_skill = 2
+                    defense_skill = 2
+                    planning_skill = 5
+                    logistics_skill = 4
+                    id = 5
+                    traits = { Politically_Connected Inflexible_Strategist Adaptable }
+                    }
+        }
+    }
+    focus = {
+        id = VIS_Get_Diego
+        icon = GFX_goal_generic_war_with_comintern
+        cost = 10
+        prerequisite = {
+            focus = VIS_Get_Sebastian
+        }
+        x = 25
+        y = 5
+        completion_reward = {
+        create_corps_commander = {
+                    name = "Diego Lorenzo Del Toro"
+                    picture = "Diego.dds"
+                    skill = 4
+                    attack_skill = 4
+                    defense_skill = 2
+                    planning_skill = 2
+                    logistics_skill = 3
+                    id = 5
+                    traits = { Improvisation_Expert Scavenger Engineer }
+                    }
+            }
+    }
+    focus = {
+        id = VIS_Carrier_Effort
+        icon = GFX_goal_generic_navy_carrier
+        cost = 10
+        prerequisite = {
+            focus = VIS_Navy_Focus_2
+        }
+        x = 16
+        y = 10
+        completion_reward = {
+        navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = USA_battleship_primacy
+				bonus = 1.0
+				uses = 2
+				category = bb_tech
+			}
+		}
+
+    }
+    focus = {
+        id = VIS_Bomber_Focus
+        icon = GFX_goal_poland_goal
+        cost = 8
+        prerequisite = {
+            focus = VIS_Air_Effort
+        }
+        x = 18
+        y = 9
+        completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = USA_TAC
+				uses = 1
+				bonus = 1.0
+				category = tactical_bomber
+			}
+		}
+    }
+    focus = {
+        id = VIS_Bomber_Focus_2
+        icon = GFX_goal_generic_air_bomber
+        cost = 10
+        prerequisite = {
+            focus = VIS_Bomber_Focus
+        }
+        x = 18
+        y = 10
+        completion_reward = {
+			air_experience = 50
+			add_tech_bonus = {
+				name = USA_TAC
+				uses = 2
+				bonus = 1.0
+				category = tactical_bomber
+			}
+		}
+    }
+    focus = {
+        id = VIS_Quantity
+        icon = GFX_goal_generic_national_unity
+        cost = 6
+        prerequisite = {
+            focus = VIS_Promote_Janne
+        }
+        mutually_exclusive = {
+            focus = VIS_Quality
+        }
+        x = 29
+        y = 2
+
+    }
+    focus = {
+        id = VIS_Get_Steff
+        icon = GFX_goal_generic_consumer_goods
+        cost = 6
+        prerequisite = {
+            focus = VIS_Quantity
+        }
+        x = 29
+        y = 3
+        completion_reward = {
+        create_corps_commander = {
+                    name = "Stefanos Zois"
+                    picture = "Steff.dds"
+                    skill = 2
+                    attack_skill = 4
+                    defense_skill = 2
+                    planning_skill = 0
+                    logistics_skill = 3
+                    id = 5
+                    traits = { Reckless Trickster Paratroopers }
+                    }
+            }
+    }
+    focus = {
+        id = VIS_Take_Educated_Kids
+        icon = GFX_goal_generic_forceful_treaty
+        cost = 6
+        prerequisite = {
+            focus = VIS_Quantity
+        }
+        x = 31
+        y = 3
+        completion_reward = {
+        create_corps_commander = {
+                    name = "Good Kids 1"
+                    picture = "Good kids 1.dds"
+                    skill = 3
+                    attack_skill = 1
+                    defense_skill = 2
+                    planning_skill = 2
+                    logistics_skill = 2
+                    id = 5
+                    traits = { }
+                    }
+create_corps_commander = {
+                    name = "Good Kids 2"
+                    picture = "Good kids 1.dds"
+                    skill = 3
+                    attack_skill = 2
+                    defense_skill = 1
+                    planning_skill = 2
+                    logistics_skill = 2
+                    id = 5
+                    traits = { }
+                    }
+        }
+    }
+    focus = {
+        id = VIS_Take_More_Kids
+        icon = GFX_goal_generic_national_unity
+        cost = 6
+        prerequisite = {
+            focus = VIS_Take_Educated_Kids
+        }
+        x = 31
+        y = 4
+        completion_reward = {
+        create_corps_commander = {
+                    name = "Kid 0"
+                    picture = "Kids 0.dds"
+                    skill = 2
+                    attack_skill = 1
+                    defense_skill = 1
+                    planning_skill = 1
+                    logistics_skill = 1
+                    id = 5
+                    traits = { }
+                    }
+create_corps_commander = {
+                    name = "Kids 1"
+                    picture = "Kids 1.dds"
+                    skill = 2
+                    attack_skill = 1
+                    defense_skill = 1
+                    planning_skill = 1
+                    logistics_skill = 1
+                    id = 5
+                    traits = { }
+                    }
+create_corps_commander = {
+                    name = "Kids 2"
+                    picture = "Kids 2.dds"
+                    skill = 2
+                    attack_skill = 1
+                    defense_skill = 1
+                    planning_skill = 1
+                    logistics_skill = 1
+                    id = 5
+                    traits = { }
+                    }
+            }
+    }
+    focus = {
+        id = VIS_EVEN_MORE_KIDS
+        icon = GFX_goal_support_communism
+        cost = 6
+        prerequisite = {
+            focus = VIS_Take_More_Kids
+        }
+        mutually_exclusive = {
+            focus = VIS_Take_Only_The_Best
+        }
+        x = 29
+        y = 5
+        completion_reward = {
+        create_corps_commander = {
+                    name = "Kids 3"
+                    picture = "Kids 3.dds"
+                    skill = 2
+                    attack_skill = 1
+                    defense_skill = 1
+                    planning_skill = 1
+                    logistics_skill = 1
+                    id = 5
+                    traits = { }
+                    }
+create_corps_commander = {
+                    name = "Kids 4"
+                    picture = "Kids 6.dds"
+                    skill = 2
+                    attack_skill = 1
+                    defense_skill = 1
+                    planning_skill = 1
+                    logistics_skill = 1
+                    id = 5
+                    traits = { }
+                    }
+create_corps_commander = {
+                    name = "Kids 5"
+                    picture = "Kids 5.dds"
+                    skill = 2
+                    attack_skill = 1
+                    defense_skill = 1
+                    planning_skill = 1
+                    logistics_skill = 1
+                    id = 5
+                    traits = { }
+                    }
+            }
+    }
+    focus = {
+        id = VIS_Take_Only_The_Best
+        icon = GFX_goal_generic_intelligence_exchange
+        cost = 6
+        prerequisite = {
+            focus = VIS_Take_More_Kids
+        }
+        mutually_exclusive = {
+            focus = VIS_EVEN_MORE_KIDS
+        }
+        x = 33
+        y = 5
+        completion_reward = {
+        create_corps_commander = {
+                    name = "Good kids 3"
+                    picture = "kids 4.dds"
+                    skill = 3
+                    attack_skill = 1
+                    defense_skill = 2
+                    planning_skill = 2
+                    logistics_skill = 2
+                    id = 5
+                    traits = { }
+                    }
+create_corps_commander = {
+                    name = "Good kids 4"
+                    picture = "Good kids 3.dds"
+                    skill = 3
+                    attack_skill = 1
+                    defense_skill = 2
+                    planning_skill = 2
+                    logistics_skill = 2
+                    id = 5
+                    traits = { }
+                    }
+            }
+    }
+    focus = {
+        id = VIS_Make_White_Inno_Generals
+        icon = GFX_goal_support_fourth_int
+        cost = 6
+        prerequisite = {
+            focus = VIS_Take_Only_The_Best
+            focus = VIS_EVEN_MORE_KIDS
+        }
+        x = 31
+        y = 6
+        completion_reward = {
+        create_corps_commander = {
+                    name = "White Inno Clone 1"
+                    picture = ""
+                    skill = 5
+                    attack_skill = 4
+                    defense_skill = 4
+                    planning_skill = 4
+                    logistics_skill = 4
+                    id = 5
+                    traits = { Skilled_Staffer Infantry_Leader }
+                    }
+create_corps_commander = {
+                    name = "White Inno Clone 2"
+                    picture = ""
+                    skill = 5
+                    attack_skill = 4
+                    defense_skill = 4
+                    planning_skill = 4
+                    logistics_skill = 4
+                    id = 5
+                    traits = { Skilled_Staffer Infantry_Leader }
+                    }
+create_corps_commander = {
+                    name = "White Inno Clone 3"
+                    picture = ""
+                    skill = 5
+                    attack_skill = 4
+                    defense_skill = 4
+                    planning_skill = 4
+                    logistics_skill = 4
+                    id = 5
+                    traits = { Skilled_Staffer Infantry_Leader }
+                    }
+            }
+    }
+    focus = {
+        id = VIS_Armor_Focus
+        icon = GFX_goal_generic_army_tanks
+        cost = 8
+        prerequisite = {
+            focus = VIS_Focus_On_The_Army
+        }
+        x = 24
+        y = 9
+        completion_reward = {
+        armor_experience = 100
+			add_tech_bonus = {
+				name = CAN_the_valentine_tank
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+			add_tech_bonus = {
+				name = CAN_the_valentine_tank
+				ahead_reduction = 2
+				bonus = 1.0
+				uses = 1
+				category = cat_light_armor
+			}
+		}
+    }
+    focus = {
+        id = VIS_Look_In_To_Guns
+        icon = GFX_goal_generic_small_arms
+        cost = 8
+        prerequisite = {
+            focus = VIS_Focus_On_The_Army
+        }
+        prerequisite = {
+            focus = VIS_Focus_On_The_Army
+        }
+        x = 26
+        y = 9
+        completion_reward = {
+        army_experience = 100
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+    }
+    focus = {
+        id = VIS_Moterized_Focus
+        icon = GFX_goal_generic_army_motorized
+        cost = 10
+        prerequisite = {
+            focus = VIS_Armor_Focus
+        }
+        prerequisite = {
+            focus = VIS_Look_In_To_Guns
+        }
+        x = 24
+        y = 10
+        completion_reward = {
+        motorized_experience = 100
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 3.0
+				technology = motorised_infantry
+			}
+		}
+    }
+    focus = {
+        id = VIS_Perfect_Army
+        icon = GFX_goal_generic_army_doctrines
+        cost = 15
+        prerequisite = {
+            focus = VIS_Moterized_Focus
+            focus = VIS_Get_Artillery
+            focus = VIS_Get_Better_Guns
+        }
+        x = 24
+        y = 11
+        completion_reward = {
+			army_experience = 100
+			add_ideas = VIS_perfect_army
+		}
+
+    }
+    focus = {
+        id = VIS_Get_Better_Guns
+        icon = GFX_goal_generic_amphibious_assault
+        cost = 10
+        prerequisite = {
+            focus = VIS_Look_In_To_Guns
+        }
+        prerequisite = {
+            focus = VIS_Armor_Focus
+        }
+        x = 28
+        y = 10
+        completion_reward = {
+        add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 2.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+    }
+    focus = {
+        id = VIS_Get_Artillery
+        icon = GFX_goal_generic_army_artillery2
+        cost = 10
+        prerequisite = {
+            focus = VIS_Look_In_To_Guns
+        }
+        x = 26
+        y = 10
+        completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 2.0
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+    }
+    focus = {
+        id = VIS_No
+        icon = GFX_focus_research
+        cost = 10
+        prerequisite = {
+            focus = VIS_Keep_Elevensval
+        }
+        mutually_exclusive = {
+            focus = VIS_Media
+            focus = VIS_Traslojd
+            focus = VIS_Media
+            focus = VIS_Traslojd
+        }
+        x = 35
+        y = 1
+        completion_reward = {
+			add_ideas = VIS_no
+		}
+    }
+    focus = {
+        id = VIS_More_Teachers2
+
+        icon = GFX_goal_generic_intelligence_exchange
+        cost = 8
+        prerequisite = {
+            focus = VIS_No
+        }
+        x = 35
+        y = 2
+        completion_reward = {
+			add_ideas = VIS_more_teachers2
+		}
+    }
+    focus = {
+        id = VIS_Super_Labs
+        icon = GFX_goal_generic_scientific_exchange
+        cost = 12
+        prerequisite = {
+            focus = VIS_More_Teachers2
+        }
+        x = 35
+        y = 3
+        completion_reward = {
+			add_ideas = VIS_super_labs
+		}
+    }
+    focus = {
+        id = VIS_Media
+        icon = GFX_goal_generic_propaganda
+        cost = 10
+        prerequisite = {
+            focus = VIS_Keep_Elevensval
+        }
+        mutually_exclusive = {
+            focus = VIS_No
+            focus = VIS_No
+            focus = VIS_Traslojd
+            focus = VIS_Traslojd
+        }
+        x = 41
+        y = 1
+        completion_reward = {
+        add_ideas = VIS_media
+        }
+    }
+    focus = {
+        id = VIS_Movies
+        icon = GFX_goal_generic_consumer_goods
+        cost = 8
+        prerequisite = {
+            focus = VIS_Media
+        }
+        x = 41
+        y = 2
+        completion_reward = {
+        add_ideas = VIS_movies
+        }
+    }
+    focus = {
+        id = VIS_Kallkritik
+        icon = GFX_goal_generic_cavalry
+        cost = 12
+        prerequisite = {
+            focus = VIS_Movies
+        }
+        x = 41
+        y = 3
+        completion_reward = {
+        add_ideas = VIS_kallkritik
+        }
+    }
+    focus = {
+        id = VIS_Civilian_Industry
+        icon = GFX_goal_generic_construct_civilian
+        cost = 8
+        prerequisite = {
+            focus = VIS_Industry_Effort
+        }
+        x = 30
+        y = 9
+        completion_reward = {
+		add_ideas = VIS_civilian_industry
+        }
+    }
+    focus = {
+        id = VIS_Military_Effort
+        icon = GFX_goal_generic_construct_mil_factory
+        cost = 8
+        prerequisite = {
+            focus = VIS_Industry_Effort
+        }
+        x = 32
+        y = 9
+        completion_reward = {
+        add_ideas = VIS_military_industry
+        }
+    }
+    focus = {
+        id = VIS_Better_Food
+        icon = GFX_goal_generic_positive_trade_relations
+        cost = 10
+        prerequisite = {
+            focus = VIS_Civilian_Industry
+            focus = VIS_Military_Effort
+        }
+        x = 30
+        y = 10
+        completion_reward = {
+        add_ideas = VIS_better_food
+        }
+    }
+    focus = {
+        id = VIS_Better_Tools
+        icon = GFX_goal_generic_air_production
+        cost = 10
+        prerequisite = {
+            focus = VIS_Military_Effort
+            focus = VIS_Civilian_Industry
+        }
+        x = 32
+        y = 10
+        completion_reward = {
+        add_ideas = VIS_better_tools
+        }
+    }
+    focus = {
+        id = VIS_Super_Food
+        icon = GFX_goal_generic_trade
+        cost = 12
+        prerequisite = {
+            focus = VIS_Better_Tools
+            focus = VIS_Better_Food
+        }
+        x = 30
+        y = 11
+        completion_reward = {
+        add_ideas = VIS_super_food
+        }
+    }
+    focus = {
+        id = VIS_Traslojd
+        icon = GFX_goal_generic_construction2
+        cost = 10
+        prerequisite = {
+            focus = VIS_Keep_Elevensval
+        }
+        mutually_exclusive = {
+            focus = VIS_No
+            focus = VIS_Media
+            focus = VIS_Media
+            focus = VIS_No
+        }
+        x = 47
+        y = 1
+        completion_reward = {
+        add_ideas = VIS_traslojd
+        }
+    }
+    focus = {
+        id = VIS_Talj_Knivar
+        icon = GFX_goal_generic_production
+        cost = 10
+        prerequisite = {
+            focus = VIS_Traslojd
+        }
+        x = 47
+        y = 2
+        completion_reward = {
+        add_ideas = VIS_talj_knivar
+        }
+    }
+    focus = {
+        id = VIS_Make_Guns_In_Traslojd
+        icon = GFX_goal_generic_military_sphere
+        cost = 12
+        prerequisite = {
+            focus = VIS_Talj_Knivar
+        }
+        x = 47
+        y = 3
+        completion_reward = {
+        add_ideas = VIS_make_guns
+        }
+    }
+    focus = {
+        id = VIS_More_Research1
+        icon = GFX_focus_research
+        cost = 8
+        prerequisite = {
+            focus = VIS_Engineering_Focus
+        }
+        x = 34
+        y = 9
+        completion_reward = {
+        add_ideas = VIS_more_research1
+        add_research_slot = 1
+        }
+    }
+    focus = {
+        id = VIS_More_Research2
+        icon = GFX_goal_generic_scientific_exchange
+        cost = 10
+        prerequisite = {
+            focus = VIS_More_Research1
+        }
+        x = 34
+        y = 10
+        completion_reward = {
+        add_ideas = VIS_more_research2
+        add_research_slot = 1
+        }
+    }
+    focus = {
+        id = VIS_Better_Engineering
+        icon = GFX_goal_generic_neutrality_focus
+        cost = 8
+        prerequisite = {
+            focus = VIS_More_Research1
+        }
+        x = 36
+        y = 10
+        completion_reward = {
+        add_ideas = VIS_better_engineering
+        }
+    }
+    focus = {
+        id = VIS_Mobile_Phones
+        icon = GFX_goal_support_democracy
+        cost = 12
+        prerequisite = {
+            focus = VIS_More_Research2
+            focus = VIS_Better_Engineering
+        }
+        x = 34
+        y = 11
+        completion_reward = {
+        add_ideas = VIS_mobile_phones
+        add_research_slot = 2
+        }
+    }
+    focus = {
+        id = VIS_Submarin_Effort
+        icon = GFX_goal_generic_wolf_pack
+        cost = 10
+        prerequisite = {
+            focus = VIS_Navy_Focus_2
+        }
+        x = 14
+        y = 10
+        completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = GER_u_boat_effort
+				bonus = 1.0
+				uses = 2
+				category = ss_tech
+			}
+		}
+
+    }
+    focus = {
+        id = VIS_Focus_On_Fighters
+        icon = GFX_goal_generic_air_fighter
+        cost = 8
+        prerequisite = {
+            focus = VIS_Air_Effort
+        }
+        x = 20
+        y = 9
+        completion_reward = {
+        	air_experience = 25
+			add_tech_bonus = {
+				name = USA_escort_fighters
+				bonus = 1.0
+				uses = 1
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+    }
+    focus = {
+        id = VIS_Fighter_Focus
+        icon = GFX_goal_generic_build_airforce
+        cost = 10
+        prerequisite = {
+            focus = VIS_Focus_On_Fighters
+        }
+        x = 20
+        y = 10
+        completion_reward = {
+        	air_experience = 50
+			add_tech_bonus = {
+				name = USA_escort_fighters
+				bonus = 1.0
+				uses = 2
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+    }
+    focus = {
+        id = VIS_Perfect_Navy
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        cost = 15
+        prerequisite = {
+            focus = VIS_Fighter_Focus
+            focus = VIS_Bomber_Focus_2
+        }
+        x = 20
+        y = 11
+        completion_reward = {
+			navy_experience = 100
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				uses = 1
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+			add_ideas = VIS_perfect_navy
+		}
+    }
+    focus = {
+        id = VIS_Perfect_Planes
+        icon = GFX_goal_generic_air_doctrine
+        cost = 15
+        prerequisite = {
+            focus = VIS_Perfect_Navy
+        }
+        prerequisite = {
+            focus = VIS_Perfect_Army
+        }
+        x = 22
+        y = 12
+        completion_reward = {
+			air_experience = 100
+			add_ideas = VIS_perfect_planes
+		}
+    }
+    focus = {
+        id = VIS_Super_Army
+        icon = GFX_goal_generic_attack_allies
+        cost = 20
+        prerequisite = {
+            focus = VIS_Perfect_Army
+        }
+        prerequisite = {
+            focus = VIS_Perfect_Navy
+        }
+        prerequisite = {
+            focus = VIS_Perfect_Planes
+        }
+        x = 22
+        y = 13
+        completion_reward = {
+        army_experience = 200
+        add_ideas = VIS_super_army
+        }
+    }
+}

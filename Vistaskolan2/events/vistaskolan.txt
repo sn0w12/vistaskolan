@@ -1,0 +1,156 @@
+add_namespace = vistaskolan
+
+country_event = {
+	id = vistaskolan.1
+	title = vistaskolan.1.t
+	desc = vistaskolan.1.d
+	picture = GFX_report_event_physics_lab_01
+		
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VIS
+		AND = {
+			date > 1936.1.1
+		}
+	}
+	
+	option = {
+		name = vistaskolan.1.a
+		add_political_power = 50
+	}	
+}
+
+country_event = {
+	id = vistaskolan.2
+	title = vistaskolan.2.t
+	desc = vistaskolan.2.d
+	picture = GFX_report_event_physics_lab_01
+		
+	is_triggered_only = yes
+
+	trigger = {
+		tag = VIS
+		AND = {
+			date > 1936.1.1
+		}
+	}
+	
+	option = {
+		name = vistaskolan.2.a
+		ai_chance = { factor = 40 }
+			create_wargoal = {
+			type = annex_everything
+			target = SWE
+			generator = { 77 }
+	}
+}	
+	option = {
+		ai_chance = { factor = 30 }
+		name = vistaskolan.3.a
+		transfer_state = 666
+	}	
+	option = {
+		ai_chance = { factor = 30 }
+		name = vistaskolan.4.a
+		diplomatic_relation = { country = SWE relation = non_aggression_pact }
+	}	
+}
+
+country_event = {
+	id = vistaskolan.3
+	title = vistaskolan.3.t
+	desc = vistaskolan.3.d
+	picture = GFX_report_event_physics_lab_01
+		
+	is_triggered_only = yes
+
+	trigger = {
+		tag = VIS
+		AND = {
+			date > 1936.1.1
+		}
+	}
+	
+	option = {
+		name = vistaskolan.5.a
+		ai_chance = { factor = 40 }
+			create_wargoal = {
+			type = annex_everything
+			target = SPR
+			generator = { 77 }
+	}
+}	
+	option = {
+		ai_chance = { factor = 30 }
+		name = vistaskolan.6.a
+		transfer_state = 172
+		transfer_state = 166
+		transfer_state = 165
+	}	
+	option = {
+		ai_chance = { factor = 30 }
+		name = vistaskolan.7.a
+		diplomatic_relation = { country = SPR relation = non_aggression_pact }
+	}	
+}
+
+country_event = {
+	id = vistaskolan.4
+	title = vistaskolan.4.t
+	desc = vistaskolan.4.d
+	picture = GFX_report_event_physics_lab_01
+		
+	is_triggered_only = yes
+
+	trigger = {
+		tag = VIS
+		AND = {
+			date > 1936.1.1
+		}
+	}
+	
+	option = {
+		name = vistaskolan.8.a
+		ai_chance = { factor = 40 }
+			create_wargoal = {
+			type = annex_everything
+			target = SPR
+			generator = { 77 }
+	}
+}	
+	option = {
+	name = vistaskolan.9.a
+		if = {
+			limit = {
+				166 = {
+					OR = {
+						is_controlled_by = VIS
+						}
+					}
+				}
+		ai_chance = { factor = 30 }
+		transfer_state = 172
+		transfer_state = 166
+		transfer_state = 165
+		transfer_state = 171
+		transfer_state = 174
+		transfer_state = 176
+		transfer_state = 170
+		transfer_state = 41
+		transfer_state = 175
+		transfer_state = 167
+		transfer_state = 168
+		transfer_state = 173
+		transfer_state = 169
+		}
+	}	
+	option = {
+		ai_chance = { factor = 30 }
+		name = vistaskolan.10.a
+		diplomatic_relation = { country = SPR relation = non_aggression_pact }
+	}	
+
+}
