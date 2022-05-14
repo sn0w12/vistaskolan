@@ -2590,152 +2590,19 @@
  GER_julius_leber:0 "Julius Leber"
  GER_theodor_heuss:0 "Theodor Heuss"
 ##############
+ VIS_vidrig_skolmat:0 "Vidrig skolmat"
+ VIS_vidrig_skolmat_desc:0 "The skolmat is so extremely vidrigt that the army doesn't want to fight anymore"
  VIS_orten_ungar:0 "Orten ungar"
  VIS_orten_ungar_desc:0 "Orten is making vistaskolan very unstable"
-
- VIS_recruit_kids:0 "Recruit kids"
- VIS_recruit_kids_desc:0 "Recruit kids to the military"
-
- VIS_shared_food:0 "Shared food"
- VIS_shared_food_desc:0 "The people need to share their food"
-
- VIS_execute_orten:0 "Executed orten"
- VIS_execute_orten_desc:0 "You executed the orten kids"
-
- VIS_orten_jobs:0 "Jobs for orten kids"
- VIS_orten_jobs_desc:0 "You gave jobs to ther orten kids"
-
- VIS_recruit_orten:0 "Recruit orten kids"
- VIS_recruit_orten_desc:0 "You recruited the orten kids to the army"
-
- VIS_war_music:0 "War music"
- VIS_war_music_desc:0 "Play music at wars"
-
- VIS_promise_peace:0 "Promise of peace"
- VIS_promise_peace_desc:0 "You promise peace to your people"
-
- VIS_more_teachers:0 "More teachers"
- VIS_more_teachers_desc:0 "Karin gets more teachers to the school"
-
- VIS_orten_ungar2:0 "Orten ungar"
- VIS_orten_ungar2_desc:0 "Orten is making vistaskolan unstable"
-
- VIS_threaten_orten:0 "Threaten the orten kids"
- VIS_threaten_orten_desc:0 "Maria "threatened the orten kids"
-
- VIS_public_dance:0 "Public dances"
- VIS_public_dance_desc:0 "You host public dances"
-
- VIS_tomas_idiologi:0 "Tomas idiologi"
- VIS_tomas_idiologi_desc:0 "Tomas idiologi"
-
- VIS_karin_idiologi:0 "Karins idiologi"
- VIS_karin_idiologi_desc:0 "Karins idiologi"
-
- VIS_maria_idiologi:0 "Marias idiologi"
- VIS_maria_idiologi_desc:0 "Marias idiologi"
-
- VIS_inno_idiologi:0 "Innos idiologi"
- VIS_inno_idiologi_desc:0 "Innos idiologi"
-
- VIS_war_plans:0 "War plans"
- VIS_war_plans_desc:0 "Very many war"
-
- VIS_kill_adam:0 "Kill Adam"
- VIS_kill_adam_desc:0 "You killed Adam"
-
- VIS_royal_navy:0 "Royal navy"
- VIS_royal_navy_desc:0 "Have a royal navy"
-
- VIS_empire_dream:0 "Empire dream"
- VIS_empire_dream_desc:0 "The emire dream"
-
- VIS_spanish_fleet:0 "Spanish fleet"
- VIS_spanish_fleet_desc:0 "The Spanish fleet"
-
- VIS_white_inno:0 "White inno clones"
- VIS_white_inno_desc:0 "Inno is making white clones of himself"
-
- VIS_inno_factories:0 "Secret inno facilities"
- VIS_inno_factories_desc:0 "Inno have big secret facilities"
-
- VIS_african_dream:0 "African dream"
- VIS_african_dream_desc:0 "Inno gets the african dream"
-
- VIS_perfect_navy:0 "Perfect Navy"
- VIS_perfect_navy_desc:0 "Get the perfect navy"
-
- VIS_perfect_planes:0 "Perfect Planes"
- VIS_perfect_planes_desc:0 "Get the perfect planes
-
- VIS_super_army:0 "Super Army"
- VIS_super_army_desc:0 "Have the greatest army"
-
- VIS_perfect_army:0 "Perfect Army"
- VIS_perfect_army_desc:0 "Have a perfect army"
-
- VIS_industry_effort:0 "Industry Effort"
- VIS_industry_effort_desc:0 "Put more effort into industry"
-
- VIS_civilian_industry:0 "Civilian Industry"
- VIS_civilian_industry_desc:0 "Put more effort into civilian industries"
-
- VIS_military_industry:0 "Military Effort"
- VIS_military_industry_desc:0 "Put more effort into military industries"
-
- VIS_better_food:0 "Better Food"
- VIS_better_food_desc:0 "Get better food"
-
- VIS_super_food:0 "Super Food"
- VIS_super_food_desc:0 "Get super food"
-
- VIS_better_tools:0 "Better Tools"
- VIS_better_tools_desc:0 "Get better tools"
-
- VIS_engineering:0 "Engineering Focus"
- VIS_engineering_desc:0 "Focus on engineering"
-
- VIS_more_research1:0 "More Research 1"
- VIS_more_research1_desc:0 "Get more research"
-
- VIS_more_research2:0 "More Research 2"
- VIS_more_research2_desc:0 "Get more research"
-
- VIS_better_engineering:0 "Better Engineering"
- VIS_better_engineering_desc:0 "Get better engineering"
-
- VIS_no_elevensval:0 "No More Elevensval"
- VIS_no_elevensval_desc:0 "Elevens val is gone forever"
-
- VIS_keep_elevensval:0 "Keep Elevensval"
- VIS_keep_elevensval_desc:0 "Keep the elevensval"
-
- VIS_no:0 "NO"
- VIS_no_desc:0 "NO"
-
- VIS_more_teachers2:0 "More Teachers 2"
- VIS_more_teachers2_desc:0 "Get more teachers"
-
- VIS_super_labs:0 "Super Labs"
- VIS_super_labs_desc:0 "Get super labs"
-
- VIS_traslojd:0 "Träslöjd"
- VIS_traslojd_desc:0 "Träslöjd"
-
- VIS_talj_knivar:0 "Tälj Knivar"
- VIS_talj_knivar_desc:0 "Tälj the knivar"
-
- VIS_make_guns:0 "Make Guns In Träslöjd"
- VIS_make_guns_desc:0 "Make some guns with Anders and Gert"
-
- VIS_media:0 Media
- VIS_media_desc:0 "Get media"
-
- VIS_movies:0 "Movies"
- VIS_movies_desc:0 "Watch movies"
-
- VIS_kallkritik:0 "Källkritik"
- VIS_kallkritik_desc:0 "Very much of källkritik"
-
- VIS_gun_hand:0 "A gun in every hand"
- VIS_gun_hand_desc:0 "Get every man a weapon!"
+ VIS_swedish_threat:0 "Swedish threat"
+ VIS_swedish_threat_desc:0 "Sweden is pressuring Vistaskolan to give back svealand"
+ VIS_bad_teachers:0 "Badly educated teachers"
+ VIS_bad_teachers_desc:0 "Vistaskolans teachers are extremely bad, this is causing problems for the army"
+ VIS_moldy_dressing:0 "Moldy dressing rooms"
+ VIS_moldy_dressing_desc:0 "Vistaskolans dressing rooms are quite old and moldy, because of this the army is taking longer to train"
+ VIS_hellish_toilets:0 "HELLISH TOILETS"
+ VIS_hellish_toilets_desc:0 "The toilets at vistaskolan are so hellish that the soldiers can't keep going anymore"
+ VIS_sub_zero:0 "Sub zero temperatures"
+ VIS_sub_zero_desc:0 "Svealand is so extremely cold that the army can barely move forward"
+ VIS_gommaren:0 "Gömmaren within arm's reach"
+ VIS_gommaren_desc:0 "The almighty lake gömmaren is extremely close to vistaskolan, this makes the ary extremely happy"
