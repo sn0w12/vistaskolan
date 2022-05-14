@@ -1,4 +1,4 @@
-﻿capital = 141	
+capital = 141	
 
 oob = "SWE_1936"
 if = {
@@ -21,8 +21,13 @@ add_ideas = {
 	VIS_sub_zero
 	VIS_gommaren
 }
+
 set_stability = 0.5
 set_war_support = 0.2
+
+add_ideas = {
+	limited_conscription
+}
 
 set_technology = {
 	infantry_weapons = 1
@@ -178,7 +183,6 @@ set_popularities = {
 set_convoys = 25
 set_stability = 0.9
 
-
 create_country_leader = {
     name = "Ola Bengtsson"
     desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
@@ -189,8 +193,6 @@ create_country_leader = {
         #
     }
 }
-
-
 
 create_country_leader = {
     name = "Tomas Reimoser"
