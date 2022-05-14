@@ -102,7 +102,7 @@ VIS_moldy_dressing = {
 
 					modifier = {
 					training_time_factor = 0.3
-					planning_speed = 0.2
+					planning_speed = -0.2
 		}
 }
 
