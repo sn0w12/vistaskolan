@@ -6,4 +6,4 @@ tags={
 }
 picture="thumbnail.png"
 name="Vistaskolan Remake"
-supported_version="1.11.10"
+supported_version="1.11.11"
