@@ -12,8 +12,14 @@ if = {
 set_research_slots = 3
 
 add_ideas = {
-	en_svensk_tiger
+	VIS_vidrig_skolmat
 	VIS_orten_ungar
+	VIS_swedish_threat
+	VIS_bad_teachers
+	VIS_moldy_dressing
+	VIS_hellish_toilets
+	VIS_sub_zero
+	VIS_gommaren
 }
 set_stability = 0.5
 set_war_support = 0.2
