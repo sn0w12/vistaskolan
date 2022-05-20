@@ -2,6 +2,7 @@
 
 All modifiers:
 https://hoi4.paradoxwikis.com/Modifiers#Military_outside_of_combat
+
 Trello:
 https://trello.com/b/sYzDKRKO/vistaskolan-remastered
 
