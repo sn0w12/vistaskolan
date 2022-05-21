@@ -150,3 +150,260 @@ VIS_gommaren = {
 					army_org_regain = 0.5
 		}
 }
+
+VIS_child_soldiers = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					weekly_manpower = 10000
+		}
+}
+
+VIS_diego_threat = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					stability_factor = -0.3
+		}
+}
+
+VIS_gun_forest = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					stability_factor = -0.5
+					army_morale = -10
+		}
+}
+
+VIS_children_chaos = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					stability_factor = -0.5
+					war_support_factor = -0.3
+					consumer_goods_factor = -0.1
+					recruitable_population_factor = -0.3
+		}
+}
+
+VIS_cafeteria_shutdown = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					stability_factor = -0.2
+					war_support_factor = -0.1
+		}
+}
+
+VIS_teacher_hitting = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					stability_factor = -0.2
+		}
+}
+
+VIS_glass_food = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					stability_factor = -0.1
+					recruitable_population_factor = -0.1
+		}
+}
+
+VIS_horse_meat = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					stability_factor = -0.1
+					recruitable_population_factor = -0.1
+		}
+}
+
+VIS_dark_vista = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					stability_factor = -0.1
+					war_support_factor = -0.5
+		}
+}
+
+VIS_dark_diego = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					stability_factor = -0.5
+					war_support_factor = -0.5
+					consumer_goods_factor = -0.5
+					recruitable_population_factor = -0.5
+					political_power_factor = -0.5
+					industrial_capacity_factory = -0.5
+					repair_speed_arms_factory_factor = -0.5 
+		}
+}
+
+VIS_eddie_student = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					stability_factor = 0.2
+					war_support_factor = 0.1
+		}
+}
+
+VIS_gommaren_expedition = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					stability_factor = 0.5
+					war_support_factor = 0.5
+					army_morale = 10
+		}
+}
+
+VIS_traslojd_betyg = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					stability_factor = 0.5
+		}
+}
+
+VIS_vista_dance = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					stability_factor = 0.5
+		}
+}
+
+VIS_elevens_play = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					stability_factor = 0.5
+		}
+}
+
+VIS_rocket_bike = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					stability_factor = 0.5
+					army_morale = 20
+		}
+}
+
+VIS_milton_back = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					war_support_factor = 0.5
+					experience_gain_army = 0.5
+		}
+}
