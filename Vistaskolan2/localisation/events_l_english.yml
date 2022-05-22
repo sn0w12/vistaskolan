@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
  germany.4.t:0 "Anschluss"
  germany.4.d:0 "Repeated uprisings in Austria clearly show that the people there long to be united with our Reich. It is now time to take action and allow the will of the people to be made manifest."
  germany.4.a:0 "How can anyone say that Austria is not German?!"
@@ -3179,25 +3179,84 @@
  usa.401.t:0 "[From.GetNameDefCap] accepts Destroyers for Bases Agreement"
  usa.401.desc:0 "British Prime Minister [From.GetLeader] has signalled his acceptance of the terms of the Destroyers for Bases Agreement. A group of [From.GetAdjective] naval officers has arrived to inspect the destroyers and oversee the transfer.\n\n There is evidently still some work to do as several [From.GetAdjective] officers seem a little concerned about the sheer amount and thickness of guano and rust on the ships to be transfered."
  usa.401.a:0 "Beggars can't be choosers."
- #################
+ ###############################################################################################
  vistaskolan.1.t:0 "Vistaskolan goes independent."
  vistaskolan.1.d:0 "Vistaskolan has taken over svealand and declared itself independent from Sweden under the leadership of Ola Bengtsson. What does this mean for the future of Sweden?"
  vistaskolan.1.a:0 "Perhaps it was inevitable."
 
- vistaskolan.2.t:0 "The Sweden question."
- vistaskolan.2.d:0 "What should vistaskolan do?."
- vistaskolan.2.a:0 "War with Sweden"
- vistaskolan.3.a:0 "Take Lappland"
- vistaskolan.4.a:0 "Peace with Sweden"
-
- vistaskolan.3.t:0 "Spanish dreams."
- vistaskolan.3.d:0 "What should vistaskolan do?."
- vistaskolan.5.a:0 "War with Spain"
- vistaskolan.6.a:0 "Take north Spain"
- vistaskolan.7.a:0 "Peace with Spain"
-
- vistaskolan.4.t:0 "The Empire Dream."
- vistaskolan.4.d:0 "What should vistaskolan do?."
- vistaskolan.8.a:0 "War with Spain"
- vistaskolan.9.a:0 "Take Spain"
- vistaskolan.10.a:0 "Peace with Spain"
+ vistaskolan.2.t:0 "Gun in Foris."
+ vistaskolan.2.d:0 "A student has found a gun in the forests of vista also known as foris, this is grave news and brings unbalance and feelings of anxiety towards all in vista."
+ vistaskolan.2.a:0 "We need to win the trust of the people back."
+ 
+ vistaskolan.3.t:0 "Fire extinguisher found in foris."
+ vistaskolan.3.d:0 "There has been an incident in which two students found a fire extinguisher in the foris."
+ vistaskolan.3.a:0 "Finally some new equipment."
+ 
+ vistaskolan.4.t:0 "Children smoking paper."
+ vistaskolan.4.d:0 "Children smoking paper during school hours have become a problem, due to smoking toxic nature and the picture it paints of vista."
+ vistaskolan.4.a:0 "We need to put a stop to this."
+ 
+ vistaskolan.5.t:0 "Children spotted smoking weed."
+ vistaskolan.5.d:0 "This has gone out of control, vista may be truly lost if we succumb to these illegal and instant gratification actions."
+ vistaskolan.5.a:0 "This is truly getting out of hand."
+ 
+ vistaskolan.6.t:0 "Child spotted biking in vista."
+ vistaskolan.6.d:0 "There is no sense of order in vista and children do as they please, something must be done, radical if need be."
+ vistaskolan.6.a:0 "We can't do anything right now."
+ vistaskolan.6.b:0 "We have to put a stop to these people."
+ 
+ vistaskolan.7.t:0 "Cafeteria threats to shutdown."
+ vistaskolan.7.d:0 "If the cafeteria shuts down children may start buy from others like enemy nations or start to indulge in illegal activities like we’ve seen others do in past."
+ vistaskolan.7.a:0 "We can't lose this buisness."
+ 
+ vistaskolan.8.t:0 "Teacher spotted hitting kid."
+ vistaskolan.8.d:0 "During one of the school trips a teacher hit one of the students in the back of the head, the reason is unknown but this action has tarnished the reputation of vista. Something must be done."
+ vistaskolan.8.a:0 "We can't let this information spread any further."
+ 
+ vistaskolan.9.t:0 "Glass shard found in food."
+ vistaskolan.9.d:0 "While eating food shards of glass was found in the food, is this an assasination attempt?."
+ vistaskolan.9.a:0 "How could we let this happen?."
+ 
+ vistaskolan.10.t:0 "Horse meat in the lasagna."
+ vistaskolan.10.d:0 "Quality of the food is going down, horse meat was found in the lasagna to cheap out."
+ vistaskolan.10.a:0 "This was not supposed to be known."
+ 
+ vistaskolan.11.t:0 "Dark past of vista."
+ vistaskolan.11.d:0 "The past of vista is dark and not pretty, some students found out about this and released their knowledge to the general public. We must act and do something."
+ vistaskolan.11.a:0 "How could we let this be known?"
+ 
+ vistaskolan.12.t:0 "Dark past of Diego."
+ vistaskolan.12.d:0 "This is terrible, war could break out if this information is confirmed to be true. All the power and reputation Diego has built could be tarnished and we would be seen as nothing more than traitors. The horrible past of Diego IBM cannot be atoned for so we must hide the fact that this information may be released by a traitor to the public."
+ vistaskolan.12.a:0 "This might truly be the end of Diego LBM."
+ 
+ vistaskolan.13.t:0 "Clone reports from war."
+ vistaskolan.13.d:0 "Reports from the current wars indicate that the white inno clones have feelings, it turns out that these clones are no different from the normal human being. With this information leaked, innos empire may crumble."
+ vistaskolan.13.a:0 "How are we going to recover from this?"
+ 
+ vistaskolan.14.t:0 "Eddie is chosen to be student of the year."
+ vistaskolan.14.d:0 "Eddie, a high ranking member of Diego IBM was chosen as student of the year, this was a great morale boost to everyone including Diego."
+ vistaskolan.14.a:0 "This is amazing!"
+ 
+ vistaskolan.15.t:0 "First expedition to gömmaren."
+ vistaskolan.15.d:0 "The first expedition to the holy gömmaren was set out for success. With this the holy fires may once again burn and vista will surely win the hearts of the world."
+ vistaskolan.15.a:0 "Finally vistaskolan is warming up."
+ 
+ vistaskolan.16.t:0 "Diego finds out about träslöjd betyg."
+ vistaskolan.16.d:0 "The members of diego has recently found out about the success in their träslöjd works this is a great boost to morale."
+ vistaskolan.16.a:0 "This is great news!"
+ 
+ vistaskolan.17.t:0 "Vista dance is created."
+ vistaskolan.17.d:0 "With the creation of the infamous vista dance we unite vista and celebrate."
+ vistaskolan.17.a:0 "Finally the people have an official dance."
+ 
+ vistaskolan.18.t:0 "Elevens val makes a play."
+ vistaskolan.18.d:0 "A fantastical play was made by the students at elevens val, during this event some leaders felt unease since an assasination attempt is easily doable during plays as seen in history, but for the general public this was a huge success."
+ vistaskolan.18.a:0 "Truly great entertainment."
+ 
+ vistaskolan.19.t:0 "Rocket bike announcement."
+ vistaskolan.19.d:0 "Inno has announced his great invention, a bike with rockets, vista is truly home to some of the smartest people in history."
+ vistaskolan.19.a:0 "This is an amazing scientific feat."
+ 
+ vistaskolan.20.t:0 "Milton comeback."
+ vistaskolan.20.d:0 "Milton was spotted with his hat, little is known about Milton but his history paints a picture of great combat abilities. This is a great propaganda tool."
+ vistaskolan.20.a:0 "Finally he is back."
