@@ -29,33 +29,17 @@ country_event = {
 	desc = vistaskolan.2.d
 	picture = GFX_report_event_physics_lab_01
 		
-	is_triggered_only = yes
+	is_triggered_only = no
+
+	fire_only_once = yes
 
 	trigger = {
 		tag = VIS
-		AND = {
-			date > 1936.1.1
-		}
 	}
 	
 	option = {
 		name = vistaskolan.2.a
-		ai_chance = { factor = 40 }
-			create_wargoal = {
-			type = annex_everything
-			target = SWE
-			generator = { 77 }
-	}
-}	
-	option = {
-		ai_chance = { factor = 30 }
-		name = vistaskolan.3.a
-		transfer_state = 666
-	}	
-	option = {
-		ai_chance = { factor = 30 }
-		name = vistaskolan.4.a
-		diplomatic_relation = { country = SWE relation = non_aggression_pact }
+		add_ideas = VIS_gun_forest
 	}	
 }
 
@@ -65,35 +49,17 @@ country_event = {
 	desc = vistaskolan.3.d
 	picture = GFX_report_event_physics_lab_01
 		
-	is_triggered_only = yes
+	is_triggered_only = no
+
+	fire_only_once = yes
 
 	trigger = {
 		tag = VIS
-		AND = {
-			date > 1936.1.1
-		}
 	}
 	
 	option = {
-		name = vistaskolan.5.a
-		ai_chance = { factor = 40 }
-			create_wargoal = {
-			type = annex_everything
-			target = SPR
-			generator = { 77 }
-	}
-}	
-	option = {
-		ai_chance = { factor = 30 }
-		name = vistaskolan.6.a
-		transfer_state = 172
-		transfer_state = 166
-		transfer_state = 165
-	}	
-	option = {
-		ai_chance = { factor = 30 }
-		name = vistaskolan.7.a
-		diplomatic_relation = { country = SPR relation = non_aggression_pact }
+		name = vistaskolan.3.a
+		add_equipment 15000 infantry_equipment_1
 	}	
 }
 
@@ -103,54 +69,341 @@ country_event = {
 	desc = vistaskolan.4.d
 	picture = GFX_report_event_physics_lab_01
 		
-	is_triggered_only = yes
+	is_triggered_only = no
+
+	fire_only_once = yes
 
 	trigger = {
 		tag = VIS
-		AND = {
-			date > 1936.1.1
-		}
+	}
+	
+	option = {
+		name = vistaskolan.4.a
+		stability_factor = -0.05
+	}	
+}
+
+country_event = {
+	id = vistaskolan.5
+	title = vistaskolan.5.t
+	desc = vistaskolan.5.d
+	picture = GFX_report_event_physics_lab_01
+		
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VIS
+	}
+	
+	option = {
+		name = vistaskolan.5.a
+		stability_factor = -0.2
+	}	
+}
+
+country_event = {
+	id = vistaskolan.6
+	title = vistaskolan.6.t
+	desc = vistaskolan.6.d
+	picture = GFX_report_event_physics_lab_01
+		
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VIS
+	}
+	
+	option = {
+		name = vistaskolan.6.a
+		stability_factor = -0.1
+	}
+	option = {
+		name = vistaskolan.6.b
+		army_morale = -5
+	}
+}
+
+country_event = {
+	id = vistaskolan.7
+	title = vistaskolan.7.t
+	desc = vistaskolan.7.d
+	picture = GFX_report_event_physics_lab_01
+		
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VIS
+	}
+	
+	option = {
+		name = vistaskolan.7.a
+		add_ideas = VIS_cafeteria_shutdown
+	}
+}
+
+country_event = {
+	id = vistaskolan.8
+	title = vistaskolan.8.t
+	desc = vistaskolan.8.d
+	picture = GFX_report_event_physics_lab_01
+		
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VIS
 	}
 	
 	option = {
 		name = vistaskolan.8.a
-		ai_chance = { factor = 40 }
-			create_wargoal = {
-			type = annex_everything
-			target = SPR
-			generator = { 77 }
+		add_ideas = VIS_teacher_hitting
 	}
-}	
-	option = {
-	name = vistaskolan.9.a
-		if = {
-			limit = {
-				166 = {
-					OR = {
-						is_controlled_by = VIS
-						}
-					}
-				}
-		ai_chance = { factor = 30 }
-		transfer_state = 172
-		transfer_state = 166
-		transfer_state = 165
-		transfer_state = 171
-		transfer_state = 174
-		transfer_state = 176
-		transfer_state = 170
-		transfer_state = 41
-		transfer_state = 175
-		transfer_state = 167
-		transfer_state = 168
-		transfer_state = 173
-		transfer_state = 169
-		}
-	}	
-	option = {
-		ai_chance = { factor = 30 }
-		name = vistaskolan.10.a
-		diplomatic_relation = { country = SPR relation = non_aggression_pact }
-	}	
+}
 
+country_event = {
+	id = vistaskolan.9
+	title = vistaskolan.9.t
+	desc = vistaskolan.9.d
+	picture = GFX_report_event_physics_lab_01
+		
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VIS
+	}
+	
+	option = {
+		name = vistaskolan.9.a
+		add_ideas = VIS_glass_food
+	}
+}
+
+country_event = {
+	id = vistaskolan.10
+	title = vistaskolan.10.t
+	desc = vistaskolan.10.d
+	picture = GFX_report_event_physics_lab_01
+		
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VIS
+	}
+	
+	option = {
+		name = vistaskolan.10.a
+		add_ideas = VIS_horse_meat
+	}
+}
+
+country_event = {
+	id = vistaskolan.11
+	title = vistaskolan.11.t
+	desc = vistaskolan.11.d
+	picture = GFX_report_event_physics_lab_01
+		
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VIS
+	}
+	
+	option = {
+		name = vistaskolan.11.a
+		add_ideas = VIS_dark_vista
+	}
+}
+
+country_event = {
+	id = vistaskolan.12
+	title = vistaskolan.12.t
+	desc = vistaskolan.12.d
+	picture = GFX_report_event_physics_lab_01
+		
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VIS
+	}
+	
+	option = {
+		name = vistaskolan.12.a
+		add_ideas = VIS_dark_diego
+	}
+}
+
+country_event = {
+	id = vistaskolan.13
+	title = vistaskolan.13.t
+	desc = vistaskolan.13.d
+	picture = GFX_report_event_physics_lab_01
+		
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VIS
+	}
+	
+	option = {
+		name = vistaskolan.13.a
+		stability_factor = -0.3
+		war_support_factor = -0.5
+	}
+}
+
+country_event = {
+	id = vistaskolan.14
+	title = vistaskolan.14.t
+	desc = vistaskolan.14.d
+	picture = GFX_report_event_physics_lab_01
+		
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VIS
+	}
+	
+	option = {
+		name = vistaskolan.14.a
+		add_ideas = VIS_eddie_student
+	}
+}
+
+country_event = {
+	id = vistaskolan.15
+	title = vistaskolan.15.t
+	desc = vistaskolan.15.d
+	picture = GFX_report_event_physics_lab_01
+		
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VIS
+	}
+	
+	option = {
+		name = vistaskolan.15.a
+		add_ideas = VIS_gommaren_expedition
+	}
+}
+
+country_event = {
+	id = vistaskolan.16
+	title = vistaskolan.16.t
+	desc = vistaskolan.16.d
+	picture = GFX_report_event_physics_lab_01
+		
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VIS
+	}
+	
+	option = {
+		name = vistaskolan.16.a
+		add_ideas = VIS_traslojd_betyg
+	}
+}
+
+country_event = {
+	id = vistaskolan.17
+	title = vistaskolan.17.t
+	desc = vistaskolan.17.d
+	picture = GFX_report_event_physics_lab_01
+		
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VIS
+	}
+	
+	option = {
+		name = vistaskolan.17.a
+		add_ideas = VIS_vista_dance
+	}
+}
+
+country_event = {
+	id = vistaskolan.18
+	title = vistaskolan.18.t
+	desc = vistaskolan.18.d
+	picture = GFX_report_event_physics_lab_01
+		
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VIS
+	}
+	
+	option = {
+		name = vistaskolan.18.a
+		add_ideas = VIS_elevens_play
+	}
+}
+
+country_event = {
+	id = vistaskolan.19
+	title = vistaskolan.19.t
+	desc = vistaskolan.19.d
+	picture = GFX_report_event_physics_lab_01
+		
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VIS
+	}
+	
+	option = {
+		name = vistaskolan.19.a
+		add_ideas = VIS_rocket_bike
+	}
+}
+
+country_event = {
+	id = vistaskolan.20
+	title = vistaskolan.20.t
+	desc = vistaskolan.20.d
+	picture = GFX_report_event_physics_lab_01
+		
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VIS
+	}
+	
+	option = {
+		name = vistaskolan.20.a
+		add_ideas = VIS_milton_back
+	}
 }
