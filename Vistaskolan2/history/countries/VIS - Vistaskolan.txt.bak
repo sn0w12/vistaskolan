@@ -21,7 +21,6 @@ add_ideas = {
 	VIS_sub_zero
 	VIS_gommaren
 }
-
 set_stability = 0.5
 set_war_support = 0.2
 
@@ -183,6 +182,7 @@ set_popularities = {
 set_convoys = 25
 set_stability = 0.9
 
+
 create_country_leader = {
     name = "Ola Bengtsson"
     desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
@@ -193,6 +193,8 @@ create_country_leader = {
         #
     }
 }
+
+
 
 create_country_leader = {
     name = "Tomas Reimoser"

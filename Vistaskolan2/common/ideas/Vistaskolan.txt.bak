@@ -1,0 +1,152 @@
+ideas = {
+	country = {
+		TUT_no_tavling = {
+					
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					removal_cost = -1
+
+					research_bonus = {
+						land_doctrine = 1
+						naval_doctrine = 1
+						air_doctrine = 1
+						}
+					
+					modifier = {
+						production_speed_buildings_factor = 10
+						conscription = 10
+						enemy_partisan_effect = -10
+						subversive_activites_upkeep = -10
+						land_reinforce_rate = 10
+						communism_drift = 0.5
+						research_speed_factor = 1
+						conversion_cost_civ_to_mil_factor= -10
+						army_morale_factor = 100
+						stability_factor = 100
+						training_time_factor = -1
+						army_org_factor = 100
+
+					}
+				}
+########################################################
+VIS_vidrig_skolmat = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+					modifier = {
+					army_morale_factor = -0.5
+					}
+}
+
+VIS_orten_ungar = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					stability_factor = -1
+					industrial_capacity_factory = -0.5
+		}
+}
+
+VIS_swedish_threat = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					stability_factor = -0.5
+		}
+}
+
+VIS_bad_teachers = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					training_time_factor = 0.3
+		}
+}
+
+VIS_moldy_dressing = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					training_time_factor = 0.3
+					planning_speed = -0.2
+		}
+}
+
+VIS_hellish_toilets = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					unit_upkeep_attrition_factor = 0.2
+					org_loss_when_moving = 0.3
+		}
+}
+
+VIS_sub_zero = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					attrition = 0.3
+					army_org_factor = -0.2
+		}
+}
+
+VIS_gommaren = {
+					allowed = {
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+					army_morale_factor = 0.75
+					army_org_regain = 0.5
+		}
+}
